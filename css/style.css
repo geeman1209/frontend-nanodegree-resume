@@ -12,6 +12,8 @@ h6 {
   padding:0;
   margin:0;
   font-family: "Roboto", sans-serif;
+  position: relative;
+  color: white;
 }
 
 .clear-fix {
@@ -22,6 +24,48 @@ h6 {
 .work-entry,
 .project-entry {
   padding: 0 5%;
+}
+
+#nav-bar{
+  display: flex;
+  width: 100%;
+  background-color: #004181;
+  overflow: hidden;
+  z-index: 100;
+  
+}
+
+.fixed-nav{
+  position: fixed;
+  top: 0px;
+
+}
+
+#nav-menu{
+  padding: 0;
+  position: relative;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+a.nav-item:hover{
+  background:#001224;
+}
+
+a.nav-item{
+  height: auto;
+  padding: 10px 20px;
+  margin-top: 0px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 
 h1 {
@@ -129,7 +173,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #004181;
 }
 
 .flex-box {
